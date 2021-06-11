@@ -1,0 +1,4 @@
+{
+    "port": 5000,
+    "mongoUri": "mongodb+srv://vsevolod:base0613@cluster-3.kmpuo.mongodb.net/MERN1?retryWrites=true&w=majority"
+}
