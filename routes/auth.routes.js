@@ -2,7 +2,7 @@ const { Router } = require('express')
 const User = require('../models/User')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const config = require('config'),
+const config = require('config')
 const {check, validationResult} = require('express-validator')
 const router = Router()
 
@@ -12,7 +12,7 @@ router.post(
     [
         check('email', 'email is incorrect').isEmail(),
         check('password', 'minimum length of password is 6 items')
-            .length({min:6})
+            .isLength({min:6})
     ], 
     async (req, res) => {
         try {
